@@ -1,0 +1,1 @@
+{"version":3,"sources":["fonts.css"],"names":[],"mappings":"AAAA,WACI,wBAA2B,CAC3B,uCACJ","file":"fonts.css","sourcesContent":["@font-face {\n    font-family: 'CascadiaCode';\n    src: url('/assets/fonts/CascadiaCode.ttf');\n}\n"]}

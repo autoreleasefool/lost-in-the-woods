@@ -1,7 +1,8 @@
-const {series, watch, src, dest, parallel} = require('gulp');
+const {series, watch, src, dest, parallel, task} = require('gulp');
 const pump = require('pump');
 
 // gulp plugins and utils
+var rename = require("gulp-rename");
 var livereload = require('gulp-livereload');
 var postcss = require('gulp-postcss');
 var zip = require('gulp-zip');
@@ -28,6 +29,14 @@ const handleError = (done) => {
         return done(err);
     };
 };
+
+task('fonts', () => {
+    return src('assets/fonts/*.*')
+        .pipe(rename((path) => {
+            path.basename = path.basename.toLowerCase();
+        }))
+        .pipe(dest('assets/built/fonts/'))
+})
 
 function hbs(done) {
     pump([
