@@ -1,0 +1,21 @@
+<header class="lw-head">
+    <div class="lw-container">
+        <div class="lw-head-brand">
+            <a href="{{@site.url}}"><h1 class="lw-head-title">{{@site.title}}</h1></a>
+            <h2 class="lw-head-description">{{@site.description}}</h2>
+        </div>
+
+        <div class="lw-head-nav-container">
+            <div class="lw-head-nav">
+                {{navigation}}
+            </div>
+            <div class="lw-head-social">
+                {{#if @site.twitter}}
+                <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                {{/if}}
+                <a href="https://github.com/josephroquedev" title="GitHub" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+                <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
+            </div>
+        </div>
+    </div>
+</header>
