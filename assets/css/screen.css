@@ -1,14 +1,8 @@
-/*
-
-This is a development CSS file which is compiled to a minified
-production stylesheet in assets/built/screen.css using: gulp dev
-
-*/
-
 /* Lib - Local component imports
 /* ---------------------------------------------------------- */
 
 /* Base */
+@import "fonts.css";
 @import "vars.css";
 @import "components/global.css";
 
@@ -22,7 +16,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "components/buttons.css";
 
 
-/* Main - Your styles here! Edit below
+/* Main
 /* ---------------------------------------------------------- */
 
 html,
@@ -30,7 +24,11 @@ html,
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #fff;
+    background: var(--color-background);
+}
+
+body {
+    background: var(--color-background);
 }
 
 .gh-main {
