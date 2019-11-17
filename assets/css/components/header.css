@@ -7,7 +7,7 @@
     padding-bottom: 4rem;
 }
 
-.lw-container {
+.lw-head-container {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -22,7 +22,6 @@
 .lw-head-title {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--color-text-primary);
 }
 
 .lw-head-description {
@@ -41,8 +40,6 @@
 .lw-head-nav-container {
     display: flex;
     margin-top: 4rem;
-    align-content: flex-start;
-    align-items: flex-start;
 }
 
 .lw-head-nav .nav {
@@ -72,11 +69,6 @@
 .lw-head-social {
     display: flex;
     margin-left: 16rem;
-}
-
-.lw-head-social a {
-    fill: white;
-    color: var(--color-text-primary);
 }
 
 .lw-head-social a {
