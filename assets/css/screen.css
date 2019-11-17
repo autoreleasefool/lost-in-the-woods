@@ -20,7 +20,7 @@
 /* ---------------------------------------------------------- */
 
 html,
-.gh-viewport {
+.lw-viewport {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -31,7 +31,7 @@ body {
     background: var(--color-background);
 }
 
-.gh-main {
+.lw-main {
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
