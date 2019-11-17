@@ -7,6 +7,7 @@ var livereload = require('gulp-livereload');
 var postcss = require('gulp-postcss');
 var zip = require('gulp-zip');
 var uglify = require('gulp-uglify');
+var ts = require('gulp-typescript');
 var beeper = require('beeper');
 
 // postcss plugins
@@ -31,12 +32,22 @@ const handleError = (done) => {
 };
 
 task('fonts', () => {
-    return src('assets/fonts/*.*')
+    return src('assets/fonts/**')
         .pipe(rename((path) => {
             path.basename = path.basename.toLowerCase();
         }))
         .pipe(dest('assets/built/fonts/'))
 })
+
+var typescriptTask = () => {
+    return src('assets/ts/*.ts')
+        .pipe(ts({
+            noImplicitAny: true,
+            outFile: 'script-ts.js',
+        }))
+        .pipe(dest('assets/built/'))
+}
+task('typescript', typescriptTask)
 
 function hbs(done) {
     pump([
@@ -89,8 +100,9 @@ function zipper(done) {
 
 const cssWatcher = () => watch('assets/css/**', css);
 const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs', '!node_modules/**/*.hbs'], hbs);
-const watcher = parallel(cssWatcher, hbsWatcher);
-const build = series(css, js);
+const tsWatcher = () => watch('assets/ts/**', typescriptTask);
+const watcher = parallel(cssWatcher, hbsWatcher, tsWatcher);
+const build = series(css, js, 'fonts', 'typescript');
 const dev = series(build, serve, watcher);
 
 exports.build = build;
