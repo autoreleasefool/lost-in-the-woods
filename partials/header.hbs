@@ -19,3 +19,31 @@
         </div>
     </div>
 </header>
+
+<div class="lw-banner">
+    <div class="lw-banner-container">
+        <div class="lw-banner-brand">
+            <a href="{{@site.url}}"><h1 class="lw-banner-title">{{@site.title}}</h1></a>
+        </div>
+
+        <div class="lw-banner-separator"></div>
+
+        <div class="lw-banner-nav-container">
+            <div class="lw-banner-nav">
+                {{navigation}}
+            </div>
+        </div>
+
+        <div class="lw-banner-separator"></div>
+
+        <div class="lw-banner-nav-container">
+            <div class="lw-banner-social">
+                {{#if @site.twitter}}
+                <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                {{/if}}
+                <a href="https://github.com/josephroquedev" title="GitHub" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+                <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
+            </div>
+        </div>
+    </div>
+</div>

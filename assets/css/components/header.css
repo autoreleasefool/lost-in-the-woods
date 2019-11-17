@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     padding-bottom: 4rem;
+    z-index: 99999;
+    background-color: var(--color-background);
 }
 
 .lw-head-container {
@@ -80,5 +82,91 @@
 }
 
 .lw-head-social a:hover {
+    fill: var(--color-text-primary);
+}
+
+/* Banner
+/* ---------------------------------------------------------- */
+
+.lw-banner {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    border-bottom: 1pt solid var(--color-text-secondary);
+    background-color: var(--color-background);
+}
+
+.lw-banner-container {
+    display: flex;
+    align-items: center;
+}
+
+.lw-banner-brand a, .lw-banner-brand a:hover, .lw-banner-brand a:visited {
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.lw-banner-title {
+    font-family: var(--font-header);
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 2rem;
+}
+
+.lw-banner-separator {
+    height: 2rem;
+    width: 1pt;
+    margin: 2rem;
+    background-color: var(--color-text-primary);
+}
+
+/* Banner Navigation
+/* ---------------------------------------------------------- */
+
+.lw-banner-nav-container {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.lw-banner-nav .nav {
+    display: flex;
+}
+
+.lw-banner-nav .nav li {
+    margin: 0 2rem 0 0;
+    padding: 0;
+}
+
+.lw-banner-nav .nav a {
+    padding: 5px 0;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.lw-banner-nav .nav-current a, .lw-banner-nav .nav a:hover {
+    color: var(--color-text-primary);
+}
+
+/* Banner Social
+/* ---------------------------------------------------------- */
+
+.lw-banner-social {
+    display: flex;
+    margin-left: -1rem;
+}
+
+.lw-banner-social a {
+    fill: var(--color-text-secondary);
+    box-sizing: unset;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+}
+
+.lw-banner-social a:hover {
     fill: var(--color-text-primary);
 }
