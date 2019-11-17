@@ -8,6 +8,9 @@
 
 /* Ghost components */
 @import "components/header.css";
+@import "components/footer.css";
+@import "components/profile.css";
+@import "components/sidebar.css";
 @import "components/content.css";
 @import "components/members.css";
 
