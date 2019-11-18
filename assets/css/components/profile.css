@@ -1,0 +1,64 @@
+/* Profile
+/* ---------------------------------------------------------- */
+
+.lw-profile {
+    --profile-image-size: 128px;
+    --profile-image-half: 64px;
+
+    width: 256px;
+    color: var(--color-text-primary);
+    padding: 2rem 3rem;
+}
+
+.lw-profile-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lw-profile .profile-image {
+    width: var(--profile-image-size);
+    height: var(--profile-image-size);
+    border-radius: var(--profile-image-half);
+    align-self: center;
+}
+
+.lw-profile-author > * {
+    margin-bottom: 2rem;
+}
+
+.lw-profile .profile-name {
+    font-weight: bold;
+}
+
+.lw-profile p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.lw-profile ul {
+    list-style-type: none;
+}
+
+.lw-profile li {
+    margin-bottom: 1rem;
+}
+
+.lw-profile li a {
+    display: flex;
+    align-items: center;
+    fill: var(--color-text-secondary);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+}
+
+.lw-profile li a:hover {
+    fill: var(--color-text-primary);
+    color: var(--color-text-primary);
+}
+
+.lw-profile li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
