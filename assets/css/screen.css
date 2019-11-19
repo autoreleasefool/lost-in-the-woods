@@ -57,9 +57,12 @@ body {
     max-width: none;
 }
 
-@media(max-width: 980px) {
+@media(max-width: 1080px) {
     .lw-main-right {
         flex: 2;
+    }
+    .lw-main-container {
+        max-width: none;
     }
 }
 
