@@ -17,11 +17,18 @@
 <body class="{{body_class}}">
     <div class="lw-viewport">
         {{> header}}
-        {{> profile}}
 
-        <main class="lw-main">
-            {{{body}}}
-        </main>
+        <div class="lw-main-wrapper">
+            <div class="lw-main-container lw-main-left">
+                {{> profile}}
+            </div>
+            <div class="lw-main-container">
+                <main class="lw-main">
+                    {{{body}}}
+                </main>
+            </div>
+            <div class="lw-main-container lw-main-right"></div>
+        </div>
 
         {{> footer}}
     </div>

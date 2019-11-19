@@ -5,9 +5,9 @@
     --profile-image-size: 128px;
     --profile-image-half: 64px;
 
-    width: 256px;
+    max-width: 30rem;
     color: var(--color-text-primary);
-    padding: 2rem 3rem;
+    padding: 2rem 4rem 2rem 2rem;
 }
 
 .lw-profile-author {
@@ -17,8 +17,9 @@
 }
 
 .lw-profile .profile-image {
-    width: var(--profile-image-size);
-    height: var(--profile-image-size);
+    max-width: var(--profile-image-size);
+    width: 100%;
+    height: auto;
     border-radius: var(--profile-image-half);
     align-self: center;
 }

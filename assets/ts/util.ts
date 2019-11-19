@@ -5,9 +5,7 @@ function hostname(url: string) {
 
 window.addEventListener('load', () => {
     const websitesToReplace = document.querySelectorAll('span.extract-hostname');
-    console.log(`Websites: ${JSON.stringify(websitesToReplace)}`);
     websitesToReplace.forEach(element => {
-        console.log(`Replacing ${element.innerHTML}`)
         element.innerHTML = hostname(element.innerHTML);
     });
 });
