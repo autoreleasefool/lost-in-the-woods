@@ -4,6 +4,7 @@
 .lw-foot {
     --profile-image-size: 64px;
     --profile-image-half: 32px;
+    --profile-image-quarter: 16px;
 
     display: flex;
     flex-direction: column;
@@ -55,9 +56,9 @@
 }
 
 .lw-foot-author-details .lw-profile-author .profile-links svg {
-    width: 32px;
-    height: 32px;
-    padding: 8px;
+    width: var(--profile-image-size);
+    height: var(--profile-image-size);
+    padding: var(--profile-image-quarter);
     margin: 0.5rem;
 }
 

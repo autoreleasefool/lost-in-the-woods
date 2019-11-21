@@ -223,12 +223,17 @@
         padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     }
     .lw-banner-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         padding: 0 1rem 0 0;
     }
+    .lw-banner-nav {
+        padding-top: 1rem;
+        padding-bottom: 0.25rem;
+    }
     .lw-banner-nav .nav a {
-        padding: 0;
-        font-size: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 0.25rem;
+        font-size: 1.25rem;
     }
     .lw-banner-nav .nav li {
         margin-right: 1rem;
