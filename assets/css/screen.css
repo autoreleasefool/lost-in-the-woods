@@ -72,6 +72,10 @@ body {
     }
 }
 
+.header {
+    font-family: var(--font-header);
+}
+
 /* Global */
 
 .gh-page {

@@ -1,4 +1,119 @@
+/* Post feed */
+/* ---------------------------------------------------------- */
 
+.post-feed {
+    --font-size-title: 2.5rem;
+    --font-size-excerpt: 1.5rem;
+
+    --content-padding: 2rem;
+}
+
+.post-feed-section-header {
+    font-family: var(--font-header);
+    font-size: 2rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+}
+
+.post-feed-section-header-spaced {
+    margin-top: 4rem;
+}
+
+.post-feed-section-separator {
+    width: calc(50% + 2rem);
+    min-width: 16rem;
+    height: 1pt;
+    background-color: var(--color-separator);
+    margin-bottom: 2rem;
+}
+
+.post-card {
+    margin-bottom: 4rem;
+}
+
+.post-card-header {
+    position: relative;
+}
+
+.post-card-title-wrapper {
+    padding: 0;
+    background-color: var(--color-background-transparent);
+}
+
+.post-card-image-title-wrapper {
+    padding: var(--content-padding);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.post-card-title {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-title);
+}
+
+.post-card-excerpt {
+    padding: 2rem 0 1rem 0;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-excerpt);
+}
+
+.post-card-details {
+    color: var(--color-text-subdued);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.post-card-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-card-detail svg {
+    fill: var(--color-text-subdued);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.post-card-tags a, .post-card-tags a:hover {
+    color: var(--color-text-subdued);
+    text-decoration: none;
+}
+
+@media(max-width: 768px) {
+    .post-feed {
+        --font-size-title: 1.75rem;
+        --font-size-excerpt: 1.25rem;
+        --font-size-details: 1rem;
+
+        --content-padding: 1rem;
+    }
+    .post-feed-section-header {
+        margin-left: 2rem;
+    }
+    .post-card-title-wrapper {
+        padding-left: var(--content-padding);
+        padding-right: var(--content-padding);
+    }
+    .post-card-image-title-wrapper {
+        padding: var(--content-padding);
+    }
+    .post-card-title {
+        font-size: var(--font-size-title);
+    }
+    .post-card-excerpt {
+        padding: var(--content-padding) var(--content-padding) 0 var(--content-padding);
+        font-size: var(--font-size-excerpt);
+    }
+    .post-card-details {
+        padding: var(--content-padding);
+        font-size: var(--font-size-details);
+    }
+}
 
 /* Content grid
 /* ---------------------------------------------------------- */
