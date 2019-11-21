@@ -1,23 +1,21 @@
 {{!< default}}
 
 <div class="lw-page">
-    <div class="lw-container">
-        <div class="post-feed">
-            {{^is "paged"}}
-                <h1 class="post-feed-section-header header">Featured</h1>
-                <div class="post-feed-section-separator"></div>
-                {{#get "posts" filter="featured:true" limit="5" include="tags"}}
-                {{#foreach posts}}
-                    {{> "post-card"}}
-                {{/foreach}}
-                {{/get}}
-
-                <h1 class="post-feed-section-header post-feed-section-header-spaced header">Most Recent</h1>
-                <div class="post-feed-section-separator"></div>
-            {{/is}}
+    <div class="post-feed">
+        {{^is "paged"}}
+            <h1 class="post-feed-section-header header">Featured</h1>
+            <div class="post-feed-section-separator"></div>
+            {{#get "posts" filter="featured:true" limit="5" include="tags"}}
             {{#foreach posts}}
                 {{> "post-card"}}
             {{/foreach}}
-        </div>
+            {{/get}}
+
+            <h1 class="post-feed-section-header post-feed-section-header-spaced header">Most Recent</h1>
+            <div class="post-feed-section-separator"></div>
+        {{/is}}
+        {{#foreach posts}}
+            {{> "post-card"}}
+        {{/foreach}}
     </div>
 </div>

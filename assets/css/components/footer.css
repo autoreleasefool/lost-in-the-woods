@@ -1,17 +1,16 @@
 /* Footer
 /* ---------------------------------------------------------- */
 
-.lw-foot {
+.lw-foot .footer-site-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
+    color: var(--color-text-subdued);
+    font-size: 1rem;
 }
 
-.lw-foot {
-    color: var(--color-text-secondary);
-}
-
-.lw-foot a {
+.lw-foot .footer-site-info a {
     color: inherit;
 }
