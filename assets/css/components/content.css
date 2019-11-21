@@ -22,8 +22,6 @@
 .post-feed-section-separator {
     width: calc(50% + 2rem);
     min-width: 16rem;
-    height: 1pt;
-    background-color: var(--color-separator);
     margin-bottom: 2rem;
 }
 

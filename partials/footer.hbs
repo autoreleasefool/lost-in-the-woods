@@ -1,5 +1,23 @@
 <footer class="lw-foot">
-    <div class="footer-site-info">
+    <div class="separator"></div>
+
+    <div class="lw-foot-author-details">
+        {{#get "authors" limit="1"}}
+            {{#foreach authors}}
+                <div class="lw-profile-author">
+                    <img class="profile-image" src="{{profile_image}}" />
+                    <p class="profile-bio">{{bio}}</p>
+                    <div class="profile-links">
+                        <a href="{{website}}">{{> "icons/link"}}</a>
+                        <a href="https://twitter.com/{{slug}}">{{> "icons/twitter"}}</a>
+                        <a href="https://github.com/{{slug}}">{{> "icons/github"}}</a>
+                    </div>
+                </div>
+            {{/foreach}}
+        {{/get}}
+    </div>
+
+    <div class="lw-foot-site-info">
         <p>&copy; {{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a></p>
         <p>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></p>
     </div>
