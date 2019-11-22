@@ -21,7 +21,6 @@
     --color-bg: #f5f5f5;
 
     /* Fonts */
-
     --font-header: 'CascadiaCode', sans-serif;
     --font-body: 'SourceSans', sans-serif;
     --font-mono: Menlo, Courier, monospace;
@@ -42,7 +41,11 @@
     --margin: 2rem;
     --radius: 0.5rem;
 
+    --content-left-flex: 1;
+    --content-right-flex: 1;
+    --content-main-flex: 3;
+
     /* Content */
-    --content-width: 50rem;
+    --content-width: 60rem;
 
 }

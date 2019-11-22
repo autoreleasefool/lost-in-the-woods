@@ -8,8 +8,16 @@
     background-color: var(--color-background);
 }
 
-.lw-head-left, .lw-head-right, .lw-head-container {
-    flex: 3;
+.lw-head-left {
+    flex: var(--content-left-flex);
+}
+
+.lw-head-right {
+    flex: var(--content-right-flex);
+}
+
+.lw-head-container {
+    flex: var(--content-main-flex);
 }
 
 .lw-head-container {
@@ -93,13 +101,10 @@
 /* Header Mobile
 /* ---------------------------------------------------------- */
 
-@media(max-width: 1080px) {
-    .lw-head-right {
-        flex: 2;
-    }
-}
-
 @media(max-width: 768px) {
+    .lw-head {
+        padding-bottom: 0;
+    }
     .lw-head-left, .lw-head-right {
         display: none;
     }

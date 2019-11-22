@@ -46,21 +46,25 @@ body {
 }
 
 .lw-main-container {
-    flex: 3;
+    flex: var(--content-main-flex);
     max-width: var(--content-width);
 }
 
 .lw-main-left, .lw-main-right {
     display: flex;
-    flex: 3;
     justify-content: flex-end;
     max-width: none;
 }
 
+.lw-main-left {
+    flex: var(--content-left-flex);
+}
+
+.lw-main-right {
+    flex: var(--content-right-flex);
+}
+
 @media(max-width: 1080px) {
-    .lw-main-right {
-        flex: 2;
-    }
     .lw-main-container {
         max-width: none;
     }

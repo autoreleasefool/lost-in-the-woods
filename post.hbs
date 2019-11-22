@@ -3,26 +3,25 @@
 {{#post}}
 
 <article class="{{post_class}}">
-    <header class="gh-header gh-canvas">
+    <header class="lw-post-header">
+        <h1 class="lw-post-title">{{title}}</h1>
+
+        <div class="lw-post-details">
+            <p class="item">{{> "icons/person"}} {{primary_author.name}}</p>
+            <p class="item">{{> "icons/calendar"}} {{date published_at format="YYYY/mm/d"}}</p>
+        </div>
+
         {{#if feature_image}}
-            <img class="gh-image" src="{{feature_image}}" alt="{{title}}" />
-        {{/if}}
-
-        <h1 class="gh-title">{{title}}</h1>
-
-        {{#if custom_excerpt}}
-            <p class="gh-excerpt">{{custom_excerpt}}</p>
+            <img class="lw-post-image" src="{{feature_image}}" alt="{{title}}" />
         {{/if}}
     </header>
 
-    <div class="gh-content gh-canvas">
+    <div class="lw-content">
         {{content}}
     </div>
 
-    <footer class="gh-footer gh-canvas">
-        <div class="gh-post-authors">
-            Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
-        </div>
+    <footer class="lw-post-footer">
+        {{> "icons/tags"}}{{tags separator=", "}}
     </footer>
 </article>
 
