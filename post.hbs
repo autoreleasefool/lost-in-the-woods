@@ -11,6 +11,13 @@
             <p class="item">{{> "icons/calendar"}} {{date published_at format="YYYY/mm/d"}}</p>
         </div>
 
+        <div class="lw-post-tags">
+            {{> "icons/tags"}}
+            <div class="lw-post-tags-inner">
+                {{tags separator=",&nbsp;"}}
+            </div>
+        </div>
+
         {{#if feature_image}}
             <img class="lw-post-image" src="{{feature_image}}" alt="{{title}}" />
         {{/if}}
@@ -20,9 +27,7 @@
         {{content}}
     </div>
 
-    <footer class="lw-post-footer">
-        {{> "icons/tags"}}{{tags separator=", "}}
-    </footer>
+    <footer class="lw-post-footer"></footer>
 </article>
 
 {{/post}}
