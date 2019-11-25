@@ -2,7 +2,7 @@
 /* ---------------------------------------------------------- */
 
 .post-feed {
-    --font-size-title: 2.5rem;
+    --font-size-title: 2rem;
     --font-size-excerpt: 1.5rem;
 
     --content-padding: 2rem;
@@ -10,7 +10,7 @@
 
 .post-feed-section-header {
     font-family: var(--font-header);
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--color-text-primary);
     margin-bottom: 1rem;
 }
@@ -91,6 +91,7 @@
         --content-padding: 1rem;
     }
     .post-feed-section-header {
+        font-size: 2rem;
         margin-left: var(--content-padding);
     }
     .post-card-title-wrapper {
