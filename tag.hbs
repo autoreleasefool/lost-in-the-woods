@@ -1,26 +1,25 @@
 {{!< default}}
 
-<div class="gh-page">
-    <div class="gh-container">
+<div class="lw-page lw-tag">
+    {{#tag}}
+    <header class="tag-head">
+        <h1 class="post-feed-section-header text-header"># {{name}}</h1>
 
-        {{#tag}}
-        <header class="page-head">
-            <h1 class="page-head-title">{{name}}</h1>
-            <p class="page-head-description">
-                {{#if description}}
-                    {{description}}
-                {{else}}
-                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
-                {{/if}}
-            </p>
-        </header>
-        {{/tag}}
+        <p class="tag-description">
+            {{#if description}}
+                {{description}}
+            {{else}}
+                {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}} about <span class="tag-name">{{name}}</span>. Read below or browse <a href="/tags">other tags</a>.
+            {{/if}}
+        </p>
 
-        <div class="post-feed">
+        <div class="separator post-feed-section-separator"></div>
+    </header>
+    {{/tag}}
+
+    <div class="post-feed">
         {{#foreach posts}}
             {{> "post-card"}}
         {{/foreach}}
-        </div>
-
     </div>
 </div>

@@ -376,3 +376,24 @@ img.kg-bookmark-icon {
 
 /* Post Footer
 /* ---------------------------------------------------------- */
+
+/* Tags
+/* ---------------------------------------------------------- */
+
+.lw-tag .tag-description {
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+}
+
+.lw-tag .tag-description .tag-name {
+    text-transform: lowercase;
+    color: var(--color-text-highlight);
+}
+
+.lw-tag .tag-description a {
+    color: var(--color-text-link);
+}
+
+.lw-tag .tag-description a:hover {
+    color: var(--color-text-link-hover);
+}
