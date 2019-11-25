@@ -180,7 +180,7 @@
 }
 
 .lw-post-tags svg {
-    margin-top: var(--icon-size-half);
+    margin-top: calc(var(--icon-size-half) / 2);
 }
 
 .lw-post-tags a {
@@ -266,6 +266,7 @@
 .kg-bookmark-container {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     color: var(--color-text-primary);
     border: 1pt var(--color-border-card) solid;
     border-radius: var(--card-radius);
@@ -284,6 +285,7 @@
 
 .kg-bookmark-content {
     flex: 2;
+    align-self: center;
     padding: var(--content-padding);
 }
 
@@ -294,20 +296,21 @@
 .kg-bookmark-thumbnail img {
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .kg-bookmark-title {
     color: var(--color-text-primary);
     font-size: 1.5rem;
     line-height: 1.75rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .kg-bookmark-description {
     color: var(--color-text-secondary);
     font-size: 1.25rem;
     line-height: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .kg-bookmark-metadata {
@@ -348,6 +351,21 @@ img.kg-bookmark-icon {
         width: 16px;
         height: 16px;
         margin: 0 1rem 0 0;
+    }
+
+    .kg-bookmark-title, .kg-bookmark-description {
+        margin-bottom: 0.5rem;
+    }
+
+    .kg-bookmark-thumbnail {
+        overflow: hidden;
+        max-height: 150px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .kg-bookmark-thumbnail img {
+        max-height: 150px;
     }
 }
 
