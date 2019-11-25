@@ -5,10 +5,10 @@
                 <img class="profile-image" src="{{profile_image}}" />
                 <p class="profile-name">{{name}}</p>
                 <p class="profile-bio">{{bio}}</p>
-                <ul>
-                    <li><a href="{{website}}">{{> "icons/link"}} <span class="extract-hostname">{{website}}</span></a></li>
-                    <li><a href="https://twitter.com/{{slug}}">{{> "icons/twitter"}} @{{slug}}</a></li>
-                    <li><a href="https://github.com/{{slug}}">{{> "icons/github"}} @{{slug}}</a></li>
+                <ul class="profile-links">
+                    <li><a href="{{website}}">{{> "icons/person"}} <span class="extract-hostname">{{website}}</span></a></li>
+                    <li><a href="https://twitter.com/{{slug}}">{{> "icons/twitter"}} <span>@{{slug}}</span></a></li>
+                    <li><a href="https://github.com/{{slug}}">{{> "icons/github"}} <span>@{{slug}}</span></a></li>
                 </ul>
             </div>
         {{/foreach}}

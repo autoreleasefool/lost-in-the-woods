@@ -10,7 +10,6 @@
 @import "components/header.css";
 @import "components/footer.css";
 @import "components/profile.css";
-@import "components/sidebar.css";
 @import "components/content.css";
 @import "components/members.css";
 
@@ -64,15 +63,13 @@ body {
     flex: var(--content-right-flex);
 }
 
-@media(max-width: 1080px) {
-    .lw-main-container {
-        max-width: none;
-    }
-}
-
 @media(max-width: 768px) {
     .lw-main-left, .lw-main-right {
         display: none;
+    }
+
+    .lw-main-wrapper {
+        justify-content: center;
     }
 }
 
@@ -87,85 +84,4 @@ body {
     height: 1pt;
     background-color: var(--color-separator);
     width: 100%;
-}
-
-/* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
-
-
-.gh-page {
-    padding: 0 4vw;
-}
-
-.gh-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-.gh-head-actions a {
-    display: inline-flex;
-    align-items: center;
-    margin: 0;
-    padding: 10px;
-}
-
-.gh-head-actions a svg {
-    height: 1.8rem;
-    fill: currentcolor;
-}
-
-.gh-head-actions a:first-child svg {
-    margin-left: 20px;
-}
-
-.gh-head-actions a:last-child svg {
-    height: 2rem;
-}
-
-/* Post header
-/* ---------------------------------------------------------- */
-
-.gh-image {
-    grid-column: full-start / full-end;
-    width: 100%;
-}
-
-.gh-post-footer {
-    margin: 2rem 0;
-}
-
-/* Errors
-/* ---------------------------------------------------------- */
-
-.gh-error {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 2vmin;
-}
-
-.gh-error-content {
-    flex: 1 0 auto;
-    text-align: center;
-}
-
-.gh-error-code {
-    margin: 0;
-    font-size: 14vmin;
-}
-
-.gh-error-description {
-    font-size: 4vmin;
-    font-weight: 300;
-    opacity: 0.6;
-}
-
-.gh-error-link {
-    display: block;
-    margin-top: 4vmin;
-    font-size: 1.6rem;
 }
