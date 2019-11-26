@@ -6,6 +6,10 @@
     --profile-image-half: 32px;
     --profile-image-quarter: 16px;
 
+    --icon-size: 64px;
+    --icon-size-half: 32px;
+    --icon-size-quarter: 16px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,15 +61,36 @@
 }
 
 .lw-foot-author-details .lw-profile-author .profile-links svg {
-    width: var(--profile-image-size);
-    height: var(--profile-image-size);
-    padding: var(--profile-image-quarter);
+    width: var(--icon-size);
+    height: var(--icon-size);
+    padding: var(--icon-size-quarter);
     margin: 0.5rem;
 }
 
 @media(max-width: 768px) {
     .lw-foot .separator, .lw-foot-author-details {
         display: block;
+    }
+
+    .lw-foot-author-details {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 300px) {
+    .lw-foot {
+        --icon-size: 16px;
+        --icon-size-half: 8px;
+        --icon-size-quarter: 4px;
+    }
+
+    .lw-foot-author-details .lw-profile-author .profile-bio {
+        text-align: left;
+    }
+
+    .lw-foot-author-details .lw-profile-author .profile-links svg {
+        padding: 0;
+        margin: var(--icon-size);
     }
 }
 
