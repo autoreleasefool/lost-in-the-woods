@@ -1,0 +1,31 @@
+{{!< default}}
+
+<div class="lw-page lw-tags">
+    <h1 class="post-feed-section-header text-header">Tags</h1>
+    <div class="separator post-feed-section-separator"></div>
+
+    <div class="tag-feed">
+        {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+        {{#foreach tags}}
+            <figure class="kg-card kg-bookmark-card">
+                <a class="kg-bookmark-container" href="{{url}}">
+                    <div class="kg-bookmark-content">
+                        <div class="kg-bookmark-title">{{name}}</div>
+                        <div class="kg-bookmark-description">{{description}}</div>
+                        <div class="kg-bookmark-metadata">
+                            <img class="kg-bookmark-icon" src="{{@site.icon}}">
+                            <span class="kg-bookmark-publisher">#{{name}}</span>
+                        </div>
+                    </div>
+                    <div class="kg-bookmark-thumbnail">
+                        {{#if feature_image}}
+                            <img src="{{feature_image}}">
+                        {{/if}}
+                    </div>
+                </a>
+            </figure>
+        {{/foreach}}
+        {{/get}}
+    </div>
+
+</div>
