@@ -86,6 +86,18 @@
     text-decoration: none;
 }
 
+.post-card:hover .post-card-excerpt  {
+    color: var(--color-text-primary);
+}
+
+.post-card:hover .post-card-details, .post-card:hover .post-card-tags a, .post-card:hover .post-card-tags a:hover {
+    color: var(--color-text-secondary);
+}
+
+.post-card:hover .post-card-detail svg {
+    fill: var(--color-text-secondary);
+}
+
 @media(max-width: 768px) {
     .post-feed {
         --font-size-title: 1.75rem;
