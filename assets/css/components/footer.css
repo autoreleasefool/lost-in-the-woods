@@ -109,3 +109,7 @@
 .lw-foot .lw-foot-site-info a {
     color: inherit;
 }
+
+.lw-foot .lw-foot-site-info a:hover {
+    color: var(--color-text-link-hover);
+}
