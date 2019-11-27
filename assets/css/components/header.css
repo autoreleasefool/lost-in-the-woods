@@ -101,7 +101,7 @@
 /* Header Mobile
 /* ---------------------------------------------------------- */
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .lw-head {
         padding-bottom: 0;
     }
@@ -217,7 +217,7 @@
 /* Banner Mobile
 /* ---------------------------------------------------------- */
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .lw-banner {
         justify-content: flex-start;
     }

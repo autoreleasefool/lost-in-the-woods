@@ -64,28 +64,8 @@
     margin-right: 8px;
 }
 
-@media(max-width: 1080px) {
-    .lw-profile ul.profile-links {
-        align-self: center;
-    }
-
-    .lw-profile .profile-links span {
-        display: none;
-    }
-
-    .lw-profile .profile-links li svg {
-        width: 32px;
-        height: 32px;
-        margin: 8px;
-    }
-
-    .lw-profile p {
-        text-align: left;
-    }
-}
-
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .lw-profile {
-        padding-right: 2rem;
+        display: none;
     }
 }

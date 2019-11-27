@@ -67,7 +67,7 @@
     margin: 0.5rem;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .lw-foot .separator, .lw-foot-author-details {
         display: block;
     }

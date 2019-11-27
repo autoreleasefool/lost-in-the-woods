@@ -98,7 +98,7 @@
     fill: var(--color-text-secondary);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .post-feed {
         --font-size-title: 1.75rem;
         --font-size-excerpt: 1.25rem;
@@ -207,7 +207,7 @@
     color: var(--color-text-primary);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .lw-post-title, .lw-post-details, .lw-post-tags {
         margin-left: var(--content-padding);
         margin-right: var(--content-padding);
@@ -268,7 +268,7 @@
     padding: var(--content-padding);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .lw-content p,
     .lw-content h1,
     .lw-content h2,
@@ -384,7 +384,7 @@ img.kg-bookmark-icon {
     margin: 0 1rem 0 0;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .kg-bookmark-card {
         padding: 0 var(--content-padding);
     }
@@ -453,7 +453,7 @@ img.kg-bookmark-icon {
     color: var(--color-text-link-hover);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .lw-tag .tag-head {
         padding: 0 var(--content-padding);
     }

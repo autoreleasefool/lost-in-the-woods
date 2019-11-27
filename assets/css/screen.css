@@ -64,7 +64,7 @@ body {
     flex: var(--content-right-flex);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 950px) {
     .lw-main-left, .lw-main-right {
         display: none;
     }
