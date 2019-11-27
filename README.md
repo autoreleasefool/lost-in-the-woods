@@ -9,13 +9,11 @@ It is based on the Ghost [Starter theme](https://github.com/TryGhost/Starter).
 - `default.hbs` - The main template file
 - `index.hbs` - Used for the home page
 - `post.hbs` - Used for individual posts
-- `page.hbs` - Used for individual pages
 - `tag.hbs` - Used for tag archives
-- `author.hbs` - Used for author archives
 
 ## Development
 
-Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/) [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
 # Install
