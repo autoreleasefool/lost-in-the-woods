@@ -1,0 +1,24 @@
+.lw-error-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 4rem;
+}
+
+.lw-error-content .lw-error-code {
+    color: var(--color-text-primary);
+}
+
+.lw-error-content .lw-error-description {
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.lw-error-content .lw-error-link a {
+    color: var(--color-text-link);
+}
+
+.lw-error-content .lw-error-link a:hover {
+    color: var(--color-text-link-hover);
+}
