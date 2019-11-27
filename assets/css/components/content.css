@@ -29,6 +29,24 @@
     margin-bottom: 4rem;
 }
 
+.post-card-content {
+    position: relative;
+}
+
+.post-card-highlight {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -2rem;
+    width: 2pt;
+    background-color: var(--color-text-link-hover);
+}
+
+.post-card-content:hover .post-card-highlight {
+    display: block;
+}
+
 .post-card-header {
     position: relative;
 }
