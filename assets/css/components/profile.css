@@ -48,17 +48,23 @@
 .lw-profile .profile-links li a {
     display: flex;
     align-items: center;
-    fill: var(--color-text-secondary);
     color: var(--color-text-secondary);
     text-decoration: none;
 }
 
+.lw-profile .profile-links li a .icon {
+    opacity: var(--opacity-secondary);
+}
+
 .lw-profile .profile-links li a:hover {
-    fill: var(--color-text-primary);
     color: var(--color-text-primary);
 }
 
-.lw-profile .profile-links li svg {
+.lw-profile .profile-links li a:hover .icon {
+    opacity: var(--opacity-primary);
+}
+
+.lw-profile .profile-links li .icon {
     width: 16px;
     height: 16px;
     margin-right: 8px;

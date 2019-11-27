@@ -6,9 +6,9 @@
                 <p class="profile-name">{{name}}</p>
                 <p class="profile-bio">{{bio}}</p>
                 <ul class="profile-links">
-                    <li><a href="{{website}}">{{> "icons/person"}} <span class="extract-hostname">{{website}}</span></a></li>
-                    <li><a href="https://twitter.com/{{slug}}">{{> "icons/twitter"}} <span>@{{slug}}</span></a></li>
-                    <li><a href="https://github.com/{{slug}}">{{> "icons/github"}} <span>@{{slug}}</span></a></li>
+                    <li><a href="{{website}}"><img class="icon" src="{{asset "built/images/icons/avatar.png"}}" /> <span class="extract-hostname">{{website}}</span></a></li>
+                    <li><a href="https://twitter.com/{{slug}}"><img class="icon" src="{{asset "built/images/icons/twitter.png"}}" /> <span>@{{slug}}</span></a></li>
+                    <li><a href="https://github.com/{{slug}}"><img class="icon" src="{{asset "built/images/icons/github.png"}}" /> <span>@{{slug}}</span></a></li>
                 </ul>
             </div>
         {{/foreach}}

@@ -7,13 +7,13 @@
         <h1 class="lw-post-title">{{title}}</h1>
 
         <div class="lw-post-details">
-            <p class="item">{{> "icons/person"}} {{primary_author.name}}</p>
-            <p class="item">{{> "icons/calendar"}} {{date published_at format="YYYY/mm/d"}}</p>
-            <p class="item">{{> "icons/clock"}} {{reading_time}}</p>
+            <p class="item"><img class="icon" src="{{asset "built/images/icons/avatar.png"}}" /> {{primary_author.name}}</p>
+            <p class="item"><img class="icon" src="{{asset "built/images/icons/calendar.png"}}" /> {{date published_at format="YYYY/mm/d"}}</p>
+            <p class="item"><img class="icon" src="{{asset "built/images/icons/clock.png"}}" /> {{reading_time}}</p>
         </div>
 
         <div class="lw-post-tags">
-            {{> "icons/tags"}}
+            <img class="icon" src="{{asset "built/images/icons/tags.png"}}" />
             <div class="lw-post-tags-inner">
                 {{tags separator=", "}}
             </div>

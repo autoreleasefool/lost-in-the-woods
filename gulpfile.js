@@ -39,6 +39,14 @@ task('fonts', () => {
         .pipe(dest('assets/built/fonts/'))
 })
 
+task('images', () => {
+    return src('assets/images/**')
+        .pipe(rename((path) => {
+            path.basename = path.basename.toLowerCase();
+        }))
+        .pipe(dest('assets/built/images/'))
+})
+
 var typescriptTask = () => {
     return src('assets/ts/*.ts')
         .pipe(ts({
@@ -102,7 +110,7 @@ const cssWatcher = () => watch('assets/css/**', css);
 const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs', '!node_modules/**/*.hbs'], hbs);
 const tsWatcher = () => watch('assets/ts/**', typescriptTask);
 const watcher = parallel(cssWatcher, hbsWatcher, tsWatcher);
-const build = series(css, js, 'fonts', 'typescript');
+const build = series(css, js, 'fonts', 'images', 'typescript');
 const dev = series(build, serve, watcher);
 
 exports.build = build;

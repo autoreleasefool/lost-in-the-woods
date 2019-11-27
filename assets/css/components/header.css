@@ -86,16 +86,19 @@
     display: flex;
 }
 
-.lw-head-social a {
-    fill: var(--color-text-secondary);
+.lw-head-social a .icon {
     box-sizing: unset;
     width: 2rem;
     height: 2rem;
     padding: 1rem;
 }
 
-.lw-head-social a:hover {
-    fill: var(--color-text-primary);
+.lw-head-social a .icon {
+    opacity: var(--opacity-secondary);
+}
+
+.lw-head-social a:hover .icon {
+    opacity: var(--opacity-primary);
 }
 
 /* Header Mobile
@@ -203,15 +206,18 @@
 }
 
 .lw-banner-social a {
-    fill: var(--color-text-secondary);
     box-sizing: unset;
     width: 2rem;
     height: 2rem;
     padding: 1rem;
 }
 
-.lw-banner-social a:hover {
-    fill: var(--color-text-primary);
+.lw-banner-social a .icon {
+    opacity: var(--opacity-secondary);
+}
+
+.lw-banner-social a:hover .icon {
+    opacity: var(--opacity-primary);
 }
 
 /* Banner Mobile
