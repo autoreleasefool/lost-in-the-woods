@@ -1,0 +1,40 @@
+nav.pagination {
+    --nav-padding: 2rem;
+
+    color: var(--color-text-secondary);
+    width: 100%;
+    display: flex;
+}
+
+nav.pagination .next, nav.pagination .prev {
+    flex: 1;
+    display: flex;
+    padding-left: var(--nav-padding);
+    padding-right: var(--nav-padding);
+}
+
+nav.pagination .prev {
+    justify-content: flex-end;
+}
+
+nav.pagination .next {
+    justify-content: flex-start;
+}
+
+nav.pagination a:hover {
+    color: var(--color-text-primary);
+}
+
+@media(max-width: 350px) {
+    nav.pagination {
+        --nav-padding: 1rem;
+    }
+
+    nav.pagination a, nav.pagination span {
+        font-size: 1.25rem;
+    }
+
+    nav.pagination .hide-small-screen {
+        display: none;
+    }
+}
