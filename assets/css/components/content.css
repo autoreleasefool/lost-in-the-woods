@@ -177,6 +177,10 @@
     align-items: center;
 }
 
+.lw-post-details .item:not(:first-child) {
+    margin-left: var(--content-padding);
+}
+
 .lw-post-header img {
     width: 100%;
 }
@@ -213,6 +217,22 @@
     .lw-post-title, .lw-post-details, .lw-post-tags {
         margin-left: var(--content-padding);
         margin-right: var(--content-padding);
+    }
+}
+
+@media(max-width: 400px) {
+    .lw-post-details {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .lw-post-details .item {
+        margin-bottom: 0.5rem;
+    }
+
+    .lw-post-details .item:not(:first-child) {
+        margin-left: 0;
     }
 }
 
