@@ -195,12 +195,6 @@
     font-size: 1.5rem;
 }
 
-.lw-post-tags-inner {
-    display: flex;
-    flex-wrap: wrap;
-    word-wrap: normal;
-}
-
 .lw-post-tags svg {
     margin-top: calc(var(--icon-size-half) / 2);
 }
