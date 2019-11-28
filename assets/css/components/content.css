@@ -163,6 +163,7 @@
 
 .lw-post-header {
     color: var(--color-text-primary);
+    margin-bottom: var(--content-padding);
 }
 
 .lw-post-header .icon {
@@ -286,6 +287,12 @@
     padding: var(--content-padding);
 }
 
+.lw-content blockquote {
+    font-style: italic;
+    border-left: 2pt solid var(--color-text-highlight);
+    padding-left: var(--content-padding);
+}
+
 @media(max-width: 950px) {
     .lw-content p,
     .lw-content h1,
@@ -293,10 +300,8 @@
     .lw-content h3,
     .lw-content h4,
     .lw-content h5,
-    .lw-content h6 {
-        margin: var(--content-padding);
-    }
-
+    .lw-content h6,
+    .lw-content blockquote,
     .lw-content ul {
         margin: var(--content-padding);
     }
