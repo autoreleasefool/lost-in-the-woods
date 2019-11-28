@@ -10,6 +10,7 @@
     "license": "MIT",
     "scripts": {
         "dev": "gulp",
+        "build": "gulp build",
         "zip": "gulp zip",
         "test": "gscan .",
         "test:ci": "gscan --fatal --verbose .",
