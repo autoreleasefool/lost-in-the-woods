@@ -8,7 +8,6 @@ var postcss = require('gulp-postcss');
 var zip = require('gulp-zip');
 var uglify = require('gulp-uglify');
 var ts = require('gulp-typescript');
-var beeper = require('beeper');
 
 // postcss plugins
 var autoprefixer = require('autoprefixer');
@@ -24,9 +23,6 @@ function serve(done) {
 
 const handleError = (done) => {
     return function (err) {
-        if (err) {
-            beeper();
-        }
         return done(err);
     };
 };
