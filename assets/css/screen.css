@@ -23,6 +23,14 @@
 /* Main
 /* ---------------------------------------------------------- */
 
+.kg-width-full,
+.kg-width-wide,
+.kg-gallery-container,
+.kg-gallery-row,
+.kg-bookmark-author {
+    /* required by gcsan to properly validate the theme */
+}
+
 html,
 .lw-viewport {
     display: flex;
